@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falta de água em Aracaju - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Falta de Água Afeta População de Aracaju e Situação Não é Reflexo da Região</h1>
+                <img class="imagem-artigo" src="assets/agua.png" alt="Falta de agua">
+                <p class="autor">Por: Vinícius Sampaio</p>
+
+                <div class="conteudo-noticia">
+                    <p>A população de Aracaju tem enfrentado uma grave crise de abastecimento de água, mas ao contrário do que muitos pensam, a situação não está relacionada à seca ou às características climáticas do Nordeste. A falta de água é resultado do rompimento de uma adutora, um problema de infraestrutura que afetou diversos bairros da capital sergipana. As autoridades locais emitiram um comunicado e estão trabalhando para normalizar o abastecimento. Caminhões-pipa foram disponibilizados para atender hospitais, escolas e outros serviços essenciais enquanto os reparos são realizados.</p>
+                    <p>A Companhia de Saneamento de Sergipe (Deso) confirmou que o rompimento da adutora ocorreu na última terça-feira, impactando o fornecimento em ao menos dez bairros da capital, incluindo o Centro, Siqueira Campos e Jardins. A situação gerou transtornos para moradores e comerciantes, que foram pegos de surpresa pela interrupção do serviço. Muitos supermercados e lojas ficaram com prateleiras vazias devido à alta procura por água mineral, e a prefeitura precisou decretar estado de emergência para garantir o abastecimento de hospitais e escolas.</p>
+                    <p>O problema de abastecimento de água em Aracaju não é novidade, mas a situação atual é mais grave do que as anteriores, pois a população foi surpreendida pelo problema em uma semana em que a cidade registrou altas temperaturas. A falta de comunicação sobre a gravidade do problema gerou revolta entre os moradores, que foram às redes sociais para reclamar da situação. A Deso informou que os reparos já estão em andamento, mas que o abastecimento normal só será restabelecido nos próximos dias. Enquanto isso, a prefeitura tenta garantir o abastecimento com caminhões-pipa para amenizar a situação.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

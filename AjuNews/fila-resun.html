@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudante fura fila do resun - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Estudante fura fila do resun e é pego na saída</h1>
+                <img class="imagem-artigo" src="assets/grandefila.jpg" alt="Fila do restaurante universitário">
+                <p class="autor">Por: Luka Rubino</p>
+
+                <div class="conteudo-noticia">
+                    <p>Um estudante da Universidade Federal de Sergipe (UFS) foi flagrado furando a fila do Restaurante Universitário (RESUN) na última terça-feira, causando revolta entre os demais alunos que aguardavam pacientemente sua vez de ser atendidos. O incidente, que ocorreu no horário de maior movimento do restaurante, serviu como um alerta sobre a falta de respeito em ambientes compartilhados.</p>
+                    <p>O incidente ocorreu por volta das 12h30, quando centenas de estudantes se dirigem ao local para o almoço. Segundo testemunhas, o jovem tentou se infiltrar no meio da fila, alegando ter "esquecido algo" e precisar "só pegar rapidinho". No entanto, a tentativa foi rapidamente percebida pelos outros alunos, que reagiram com indignação e vaias. A situação quase se transformou em uma confusão generalizada.</p>
+                    <p>A administração da UFS informou que está tomando medidas para coibir esse tipo de comportamento, incluindo a instalação de câmeras de segurança e a presença de monitores durante os horários de pico. Em nota, a coordenação do RESUN declarou: "O RESUN é um espaço de todos e para todos. Respeitamos a ordem de chegada e esperamos que todos os estudantes façam o mesmo, mantendo a disciplina e o respeito mútuo. Medidas cabíveis serão tomadas para garantir que este tipo de comportamento não se repita."</p>
+                    <p>O episódio levantou um debate nas redes sociais sobre a "ética da fila" e a importância de respeitar as regras básicas de convivência. Muitos estudantes reclamaram que esse tipo de atitude é frequente no RESUN, mas que raramente os infratores são identificados e punidos. O caso do estudante pego na saída pode servir de exemplo para que outros não tentem a mesma "malandragem".</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

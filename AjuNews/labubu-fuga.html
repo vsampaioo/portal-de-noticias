@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labubu e Bobbie Goods - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Menina de 9 Anos Foge para o Japão Após Mãe Negar Brinquedos de Coleção
+</h1>
+                <img class="imagem-artigo" src="assets/labubu.jpg" alt="Bonecos Labubu">
+                <p class="autor">Por: Paula Fernanda</p>
+
+                <div class="conteudo-noticia">
+                    <p>Em um caso inusitado, uma menina de 9 anos de idade, identificada como Joana, fugiu de casa e foi parar no Japão. Segundo relatos, a criança teria viajado clandestinamente após sua mãe se recusar a comprar os brinquedos de coleção Labubu e Bobbie Goods. O caso gerou espanto e debate sobre a obsessão por itens de coleção e a influência da cultura pop na infância. A família de Joana está em contato com as autoridades para trazer a menina de volta para o Brasil.</p>
+                    <p>A saga de Joana começou após uma discussão com a mãe, que não cedeu à pressão para comprar os bonecos de vinil, que se tornaram febre na internet. A menina, que já demonstrava um apego excessivo a esses itens, teria planejado a fuga por dias. Usando as economias de um cofrinho e um cartão de crédito de um familiar, Joana conseguiu comprar uma passagem aérea para o Japão, onde imaginava que poderia encontrar os brinquedos com mais facilidade. O fato de uma criança conseguir embarcar sozinha em um voo internacional sem ser notada pelas autoridades de segurança é um dos pontos mais questionados do caso, levantando sérias preocupações sobre a segurança em aeroportos.</p>
+                    <p>Chegando a Tóquio, Joana tentou ir a lojas de brinquedos e colecionáveis, mas acabou se perdendo. Felizmente, ela foi encontrada por uma família japonesa, que, desconfiada, acionou a polícia. Com a ajuda da embaixada brasileira, a identidade de Joana foi confirmada e sua família no Brasil, notificada. A notícia se espalhou rapidamente nas redes sociais, com muitos usuários criticando a falta de vigilância dos pais e a influência negativa que a cultura de consumo desenfreado pode ter sobre crianças. Especialistas em infância e adolescência destacam a necessidade de impor limites e de educar os filhos sobre o valor do dinheiro e o perigo do consumismo excessivo.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

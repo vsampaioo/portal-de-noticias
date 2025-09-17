@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vini Jr e Virginia - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Virgínia Fonseca Viaja para Madrid e Alimenta Rumores de Romance com Vini Jr.</h1>
+                <img class="imagem-artigo" src="assets/viniJR.avif" alt="Vinicius Jr e Virginia">
+                <p class="autor">Por: Redação Fofoqueira AjuNews</p>
+
+                <div class="conteudo-noticia">
+                    <p>A influenciadora Virgínia Fonseca está mais uma vez no centro das atenções. A empresária fez uma nova viagem a Madrid, na Espanha, e reacendeu os rumores sobre um possível romance com o jogador de futebol Vini Jr. A viagem, que aconteceu poucos dias depois de sua última visita ao país, gerou grande repercussão nas redes sociais, com fãs e tabloides especulando sobre a natureza do relacionamento dos dois. Nem Virgínia nem Vini Jr. confirmaram oficialmente o affair, mas a influenciadora tem sido vista frequentando os mesmos locais que o atleta, o que reforça as suspeitas.</p>
+                    <p>O interesse na vida amorosa de Virgínia Fonseca não é novidade, principalmente após o término de seu relacionamento anterior. A influenciadora, que tem uma legião de seguidores, usa as redes sociais como ferramenta para divulgar sua vida pessoal e seus negócios. No entanto, sua vida amorosa se tornou um dos temas mais comentados pelos fãs. A aproximação com Vini Jr., um dos jogadores brasileiros mais famosos e bem-sucedidos do mundo, adicionou mais lenha à fogueira. A última viagem de Virgínia para Madrid foi acompanhada de perto pelos seus seguidores. Ela postou fotos em restaurantes e pontos turísticos da cidade, mas evitou mostrar o jogador.</p>
+                    <p>Os rumores se intensificaram quando Vini Jr. foi flagrado em uma foto com a família e amigos de Virgínia em um jantar. Embora não houvesse nenhuma confirmação oficial, a foto foi o bastante para que as redes sociais ficassem em polvorosa. O casal tem sido cauteloso para não dar detalhes do relacionamento, mas a frequência das viagens de Virgínia a Madrid e a proximidade com o círculo de amizades de Vini Jr. parecem confirmar o que muitos já suspeitavam. O silêncio de ambos tem sido interpretado como um sinal de que eles estão tentando manter o relacionamento longe dos holofotes da mídia.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

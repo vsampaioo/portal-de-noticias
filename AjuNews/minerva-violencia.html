@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violência no mundo digital - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Streamer de LoL Gustavo "Minerva" de Queiroz é Alvo de Ataques Homofóbicos</h1>
+                <img class="imagem-artigo" src="assets/minerva.jpg" alt="Streamer Minerva">
+                <p class="autor">Por: Luka Rubino</p>
+
+                <div class="conteudo-noticia">
+                    <p>O streamer de League of Legends Gustavo de Queiroz, mais conhecido como Minerva, foi vítima de um ataque homofóbico durante uma transmissão ao vivo. Em uma série de comentários maliciosos, um usuário o chamou de "anomalia genética" por ser gay, causando indignação na comunidade de gamers. Minerva, que é um dos criadores de conteúdo mais populares do cenário de e-sports, recebeu apoio massivo de outros streamers e de seus seguidores, que repudiaram a atitude preconceituosa. O episódio coloca em destaque a necessidade de mais respeito e tolerância no universo dos jogos online.</p>
+                    <p>O incidente ocorreu enquanto Minerva jogava uma partida de LoL e interagia com o chat. Um usuário, escondido atrás de um perfil anônimo, começou a fazer comentários ofensivos sobre a sexualidade do streamer. As mensagens, que se tornaram cada vez mais agressivas, culminaram no insulto homofóbico. Minerva, que sempre foi aberto sobre sua identidade, manteve a calma, mas expressou sua frustração com a falta de respeito. "É lamentável ver que, em pleno século XXI, ainda temos que lidar com esse tipo de preconceito. Eu sempre busquei criar um espaço seguro e acolhedor para todos, mas parece que ainda há muito o que mudar", disse o streamer aos seus seguidores.</p>
+                    <p>O caso de Minerva ganhou repercussão além do universo dos games. Personalidades e veículos de mídia se uniram em solidariedade ao streamer, condenando a homofobia e a cultura de ódio na internet. A plataforma de streaming Twitch, onde ocorreu o ataque, foi pressionada a adotar medidas mais rígidas para coibir comentários preconceituosos. O episódio com Minerva evidencia que a homofobia ainda é um problema sério no ambiente digital, e que a luta por um ambiente mais seguro e inclusivo para a comunidade LGBTQIA+ ainda tem um longo caminho a percorrer.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

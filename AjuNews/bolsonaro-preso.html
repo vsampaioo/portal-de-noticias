@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preso ex-presidente do Brasil - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Ex-Presidente Jair Bolsonaro é Condenado e Preso</h1>
+                <img class="imagem-artigo" src="assets/bolsonaro.png" alt="Bolsonaro preso">
+                <p class="autor">Por: Lula</p>
+
+                <div class="conteudo-noticia">
+                    <p>O ex-presidente Jair Messias Bolsonaro foi condenado pela Primeira Turma do Supremo Tribunal Federal (STF) por seu envolvimento em uma tentativa de golpe de Estado. A pena, de 27 anos e 3 meses de prisão em regime fechado, foi resultado de um processo que investigou a articulação de um plano para impedir a posse do atual governo. A prisão de Bolsonaro foi decretada após o descumprimento de medidas cautelares impostas anteriormente. A defesa do ex-presidente ainda pode recorrer, mas o cumprimento da sentença pode ser iniciado ainda neste ano.</p>
+                    <p>A condenação de Bolsonaro é um marco na história política do Brasil e encerra um longo processo judicial que investigou a responsabilidade do ex-presidente em uma série de crimes, incluindo a tentativa de golpe de Estado e a disseminação de fake news. A decisão do STF foi unânime e baseada em provas robustas, como áudios, documentos e depoimentos de testemunhas. A defesa do ex-presidente, no entanto, argumenta que a decisão é política e que Bolsonaro é vítima de uma perseguição judicial. Eles prometem recorrer em todas as instâncias possíveis, mas a decisão do STF é considerada um duro golpe para a defesa do ex-presidente.</p>
+                    <p>A prisão de Bolsonaro foi acompanhada de perto pela mídia e pela população. O ex-presidente foi levado para uma cela na sede da Polícia Federal em Brasília, onde ficará à disposição da Justiça. A prisão gerou reações mistas nas redes sociais. Enquanto muitos comemoraram a decisão, outros a criticaram. O atual governo não se manifestou sobre o assunto, mas a prisão do ex-presidente é vista como um passo importante para a defesa da democracia e do estado de direito. A decisão do STF também serviu como um recado para a classe política de que ninguém está acima da lei.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

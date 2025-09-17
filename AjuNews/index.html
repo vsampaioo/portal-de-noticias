@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AjuNews - Seu Portal de Notícias Sensacionalista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="sidebar" id="sidebar">
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+        <a href="#">Tiktokers</a>
+        <a href="#">Podcasts</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <span class="logo-text">
+                    <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                    <span class="logo-year">2026</span>
+                </span>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <a href="fila-resun.html" class="destaque-link">
+                <section class="noticia-destaque">
+                    <img src="assets/grandefila.jpg" alt="Imagem da notícia em destaque">
+                    <div class="destaque-texto">
+                        <h2>Estudante fura fila do resun e é pego na saída</h2>
+                        <p>Universidade Federal de Sergipe toma medidas para evitar a desonestidade e tumulto na fila do restaurante universitário.</p>
+                    </div>
+                </section>
+            </a>
+            
+            <div class="noticias-lista">
+                <a href="neymar-selecao.html" class="card-link">
+                    <article class="noticia-card">
+                        <img src="assets/neymar.jpg" alt="Imagem da notícia 1">
+                        <div class="card-texto">
+                            <h3>Barraram o menino da vila</h3>
+                            <p>Neymar não é convocado para a seleção Brasileira e fã comete suicídio</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="labubu-fuga.html" class="card-link">
+                    <article class="noticia-card">
+                        <img src="assets/labubu.jpg" alt="Imagem da notícia 2">
+                        <div class="card-texto">
+                            <h3>Labubu e Bobbie Goods</h3>
+                            <p>Menina de 9 anos foge de casa e vai morar no Japão, após a sua mãe não comprar labubu e bobbie goods</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="vini-virginia.html" class="card-link">
+                    <article class="noticia-card">
+                        <img src="assets/viniJR.avif" alt="Imagem da notícia 3">
+                        <div class="card-texto">
+                            <h3>Virginia está na casa de Vini Jr?</h3>
+                            <p>Virginia viajou novamente para Madrid, na Espanha, onde mora Vini Jr e está dando o que falar nas redes sociais</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="minerva-violencia.html" class="card-link">
+                    <article class="noticia-card">
+                        <img src="assets/minerva.jpg" alt="Imagem da notícia 4">
+                        <div class="card-texto">
+                            <h3>Violência no mundo digital</h3>
+                            <p>Gustavo de Queiroz, conhecido como Minerva, streamer de League of Legends, é chamado de anomalia genética por ser gay</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="bolsonaro-preso.html" class="card-link">
+                    <article class="noticia-card">
+                        <img src="assets/bolsonaro.png" alt="Imagem da notícia 5">
+                        <div class="card-texto">
+                            <h3>Bolsonaro é preso</h3>
+                            <p>O criador do "é apenas uma gripezinha" o ex-presidente do Brasil, foi preso hoje</p>
+                        </div>
+                    </article>
+                </a>
+                <a href="agua-aracaju.html" class="card-link">
+                    <article class="noticia-card">
+                        <img src="assets/agua.png" alt="Imagem da notícia 6">
+                        <div class="card-texto">
+                            <h3>Sem água, sem banho</h3>
+                            <p>A cidade de Aracaju encontra-se sem água a mais de três dias e não é porque se encontra no Nordeste</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="widgets-container">
+                <div class="stock-widget">
+                    <h4>💰 Cotações em Tempo Real</h4>
+                    <div class="stock-items">
+                        <div class="stock-item">
+                            <span class="currency">USD/BRL</span>
+                            <span class="price" id="usd-price">R$ 5,85</span>
+                            <span class="change positive" id="usd-change">+0,12</span>
+                        </div>
+                        <div class="stock-item">
+                            <span class="currency">EUR/BRL</span>
+                            <span class="price" id="eur-price">R$ 6,15</span>
+                            <span class="change negative" id="eur-change">-0,08</span>
+                        </div>
+                        <div class="stock-item">
+                            <span class="currency">IBOVESPA</span>
+                            <span class="price" id="ibov-price">125.847</span>
+                            <span class="change positive" id="ibov-change">+1,2%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="weather-widget">
+                    <h4>🌤️ Tempo em Aracaju</h4>
+                    <div class="weather-info">
+                        <div class="weather-main">
+                            <span class="temperature" id="temperature">28°C</span>
+                            <span class="weather-desc" id="weather-desc">Ensolarado</span>
+                        </div>
+                        <div class="weather-details">
+                            <span>Máx: <span id="max-temp">32°C</span></span>
+                            <span>Mín: <span id="min-temp">24°C</span></span>
+                            <span>Umidade: <span id="humidity">65%</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

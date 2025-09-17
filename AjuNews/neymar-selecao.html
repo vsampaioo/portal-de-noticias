@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar fora da seleção - AjuNews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .conteudo-noticia {
+            font-family: 'Merriweather', serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .conteudo-noticia p {
+            margin-bottom: 1.5rem;
+        }
+        .autor {
+            font-style: italic;
+            color: #6b7280;
+            margin: 1.5rem 0;
+        }
+        body.dark-mode .autor {
+            color: #9ca3af;
+        }
+        .titulo-artigo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .imagem-artigo {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <a href="index.html">Início</a>
+        <a href="#">Últimas</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#">Saúde</a>
+        <a href="#">Mundo</a>
+        <a href="#">Cultura</a>
+        <a href="#">Carros</a>
+        <a href="#">Música</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">
+                        <span class="logo-aju">Aju</span><span class="logo-news">News</span>
+                        <span class="logo-year">2026</span>
+                    </span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Buscar...">
+            </div>
+            <div class="theme-toggle-container">
+                <input type="checkbox" id="theme-toggle" class="theme-toggle-input">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <div class="toggle-slider">
+                        <div class="toggle-icon sun-icon">☀️</div>
+                        <div class="toggle-icon moon-icon">🌙</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <article>
+                <h1 class="titulo-artigo">Fã de Neymar Comete Suicídio Após Não Convocação para a Seleção</h1>
+                <img class="imagem-artigo" src="assets/neymar.jpg" alt="Neymar selecao">
+                <p class="autor">Por: Chico</p>
+
+                <div class="conteudo-noticia">
+                    <p>A comunidade esportiva foi abalada por uma notícia trágica nesta semana. Uma jovem torcedora de 18 anos, identificada como Maria de Oliveira, tirou a própria vida após a não convocação de Neymar para os próximos jogos da Seleção Brasileira. Familiares e amigos relatam que Maria era uma grande fã do jogador e demonstrava uma devoção acima do comum, o que pode ter levado a esse final lamentável. A notícia levanta discussões sobre o culto a celebridades e a saúde mental de jovens nas redes sociais.</p>
+                    <p>A família de Maria, que reside em uma cidade no interior do estado de São Paulo, expressou sua profunda tristeza e preocupação com a intensidade da paixão da jovem pelo ídolo. De acordo com o pai, José da Silva, Maria passava a maior parte do seu tempo livre acompanhando notícias, jogos e a vida pessoal de Neymar em redes sociais e sites de fãs. “Era algo que nos assustava. Ela não falava de outra coisa. Achávamos que era uma fase, mas nunca imaginamos que chegaria a esse ponto”, declarou o pai em entrevista a um veículo local.</p>
+                    <p>O caso de Maria não é isolado. Psicólogos e especialistas em comportamento digital alertam para o perigo da idealização excessiva de figuras públicas. A psicóloga Ana Clara Ribeiro, que estuda o impacto da mídia e das redes sociais em jovens, explica que a linha entre admiração e obsessão pode ser tênue. "Muitos jovens, especialmente na era digital, constroem uma identidade baseada em seus ídolos. Quando algo frustra essa idealização, como a não convocação de um jogador, a pessoa pode sentir uma perda tão grande quanto a morte de um ente querido", pontuou a especialista. O incidente com Maria serve como um alerta para a necessidade de atenção aos sinais de sofrimento mental e à importância de buscar ajuda profissional. A Confederação Brasileira de Futebol (CBF) e o próprio Neymar ainda não se manifestaram sobre o ocorrido.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class="anuncios">
+            <a href="https://www.kto.bet" target="_blank"><img src="assets/tigrinho.webp" alt="Anúncio 1"></a>
+            <a href="https://www.garoto.com.br/baton" target="_blank"><img src="assets/batom.jpg" alt="Anúncio 2"></a>
+            <a href="https://www.unit.br/" target="_blank"><img src="assets/unit.png" alt="Anúncio 3"></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><img src="assets/mcdonalds.png" alt="Anúncio 4"></a>
+            <a href="https://www.nike.com.br/" target="_blank"><img src="assets/nike.png" alt="Anúncio 5"></a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AjuNews. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
