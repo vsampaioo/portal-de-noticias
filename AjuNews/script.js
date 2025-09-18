@@ -1,21 +1,14 @@
-// Aguarda o documento HTML ser completamente carregado
 document.addEventListener("DOMContentLoaded", () => {
-  // --- Funcionalidade da Barra Lateral (Sidebar) ---
   const menuBtn = document.getElementById("menu-btn")
-  const sidebar = document.getElementById("sidebar")
 
-  if (menuBtn && sidebar) {
+  if (menuBtn) {
     menuBtn.addEventListener("click", () => {
-      // Adiciona ou remove a classe 'aberta' para mostrar/esconder o menu
-      sidebar.classList.toggle("aberta")
+      document.body.classList.toggle("sidebar-aberta")
     })
-  }
-
-  // --- Funcionalidade do Dark Mode ---
+}
   const themeToggle = document.getElementById("theme-toggle")
   const body = document.body
 
-  // Função para aplicar o tema salvo
   const aplicarTemaSalvo = () => {
     const temaSalvo = localStorage.getItem("tema")
     if (temaSalvo === "dark") {
@@ -33,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (themeToggle) {
     themeToggle.addEventListener("change", () => {
-      // Alterna a classe 'dark-mode' no corpo da página baseado no estado do checkbox
       if (themeToggle.checked) {
         body.classList.add("dark-mode")
         localStorage.setItem("tema", "dark")
@@ -44,12 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // Aplica o tema salvo assim que a página carrega
   aplicarTemaSalvo()
 
-  // --- Funcionalidade de Atualização de Dados em Tempo Real ---
 
-  // Função para atualizar preços de ações em tempo real
   function updateStockPrices() {
     const usdPrice = document.getElementById("usd-price")
     const eurPrice = document.getElementById("eur-price")
@@ -59,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const ibovChange = document.getElementById("ibov-change")
 
     if (usdPrice && eurPrice && ibovPrice) {
-      // More realistic price simulation
       const usdBase = 5.85
       const eurBase = 6.15
       const ibovBase = 125847
@@ -72,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
       eurPrice.textContent = `R$ ${eurNew}`
       ibovPrice.textContent = ibovNew.toLocaleString("pt-BR")
 
-      // Calculate and display percentage changes
       const usdChangeVal = (((usdNew - usdBase) * 100) / usdBase).toFixed(2)
       const eurChangeVal = (((eurNew - eurBase) * 100) / eurBase).toFixed(2)
       const ibovChangeVal = (((ibovNew - ibovBase) * 100) / ibovBase).toFixed(1)
@@ -81,14 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
       eurChange.textContent = `${eurChangeVal > 0 ? "+" : ""}${eurChangeVal}%`
       ibovChange.textContent = `${ibovChangeVal > 0 ? "+" : ""}${ibovChangeVal}%`
 
-      // Update classes for positive/negative changes
       usdChange.className = `change ${usdChangeVal >= 0 ? "positive" : "negative"}`
       eurChange.className = `change ${eurChangeVal >= 0 ? "positive" : "negative"}`
       ibovChange.className = `change ${ibovChangeVal >= 0 ? "positive" : "negative"}`
     }
   }
 
-  // Função para atualizar dados meteorológicos em tempo real
   function updateWeather() {
     const temperature = document.getElementById("temperature")
     const weatherDesc = document.getElementById("weather-desc")
@@ -119,10 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Inicializa atualizações em tempo real
+
   updateStockPrices()
-  setInterval(updateStockPrices, 15000) // Update every 15 seconds
+  setInterval(updateStockPrices, 15000)
 
   updateWeather()
-  setInterval(updateWeather, 180000) // Update every 3 minutes
+  setInterval(updateWeather, 180000)
 })
